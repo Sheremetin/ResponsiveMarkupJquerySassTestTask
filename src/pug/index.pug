@@ -3,12 +3,19 @@ html(lang='en', ng-app='CounterApp')
   head
     meta(charset='UTF-8')
     title Title
+    meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0")
+    link(href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet")
+    link(rel='stylesheet', type='text/css', href="css/main.min.css")
   body
-    div()
+    .container
+      include partials/header.pug
+      include partials/content.pug
       div()
-        button() Split
-        br
-        br
-        br
-    
+        div()
+          button(class='call') Split
+          br
+          br
+          br
+      include partials/footer.pug
+    script(src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js")
     script(src='js/all.min.js')

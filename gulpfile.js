@@ -166,17 +166,17 @@ gulp.task('watch.scripts', function () {
 /**
  * Build bower
  */
-gulp.task('bower', function () {
-    var jsFilter    = filter('**/*.js', {restore: true});
-
-    return gulp.src('./bower.json')
-        .pipe(bower({
-            paths: './'
-        }))
-        .pipe(jsFilter)
-        .pipe(dedupe())
-        .pipe(concat('vendor.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(ASSETS_PATH + 'js'))
-        .pipe(jsFilter.restore)
-});
+// gulp.task('bower', function () {
+//     var jsFilter    = filter('**/*.js', {restore: true});
+//
+//     return gulp.src('./bower.json')
+//         .pipe(bower({
+//             paths: './'
+//         }))
+//         .pipe(jsFilter)
+//         .pipe(dedupe())
+//         .pipe(concat('vendor.min.js'))
+//         .pipe(uglify())
+//         .pipe(gulp.dest(ASSETS_PATH + 'js'))
+//         .pipe(jsFilter.restore)
+// });
