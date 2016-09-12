@@ -27,7 +27,7 @@ var gulp = require('gulp'),
     batch = require('gulp-batch');
 
 gulp.task('build', ['clean', 'watch'], function () {
-    gulp.start('bower', 'scripts', 'pug', 'img', 'fonts', 'sass');
+    gulp.start('scripts', 'pug', 'img', 'fonts', 'sass');
 });
 
 /**
@@ -112,7 +112,7 @@ gulp.task('watch',
     [
         'watch.img',
         'watch.pug',
-        'watch.fonts',
+        //'watch.fonts',
         'watch.sass',
         'watch.scripts'
     ]
@@ -139,11 +139,11 @@ gulp.task('watch.img', function () {
 /**
  * Watch fonts
  */
-gulp.task('watch.fonts', function () {
-    watch(SRC_PATH + 'fonts/**/*.{ttf,woff,eof,svg}', batch(function (events, done) {
-        gulp.start('fonts', done);
-    }));
-});
+//gulp.task('watch.fonts', function () {
+//    watch(SRC_PATH + 'fonts/**/*.{ttf,woff,eof,svg}', batch(function (events, done) {
+//        gulp.start('fonts', done);
+//    }));
+//});
 
 /**
  * Watch sass

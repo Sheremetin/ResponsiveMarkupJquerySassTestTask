@@ -1,18 +1,80 @@
+@import "../mixin/mixin"
+
 .header
+  width: 1140px
+  margin: 0 auto
+  overflow: hidden
+  padding-bottom: 15px
+  z-index: 1
+  left: calc((100% - 1140px) / 2)
+  position: absolute
+  background: #ffffff
+  box-shadow: 0 8px 5px -4px rgba(33, 115, 188, .9)
+
+  @include breakpoint(1024px)
+    width: 100%
+    left: 0
+
   &-logo
     float: left
+    padding-top: 4px
+
+    &-link
+      font-size: 35px
+      font-weight: bold
+      font-family: 'Ubuntu', sans-serif
+      padding-left: 22px
+      color: #565656
+
+      .is-blue
+        color: #3f89d5
+
+      &-img
+        vertical-align: middle
+
   &-menu
     float: right
+
     &-list
       list-style: none
+
       &-item
         float: left
         color: #999999
         font-family: 'Open Sans', sans-serif
         font-weight: 300
+
         &-link
           text-decoration: none
-          padding: 5px 10px
+          padding: 23px 15px
           display: block
+          font-size: 12px
+
           &:hover
             text-decoration: underline
+
+          &.is-icon
+            padding: 9px 3px
+
+            i
+              border-radius: 3px
+              color: #ffffff
+              height: 32px
+              width: 32px
+              font-size: 16px
+
+            .fa-comment
+              background: #5ea4f2
+              margin-left: 10px
+
+              &:before
+                padding: 7px 8px
+                display: block
+
+            .fa-user
+              background: #45b161
+              margin-right: 16px
+
+              &:before
+                padding: 7px 10px
+                display: block
