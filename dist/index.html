@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable = no">
         <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/main.min.css">
     </head>
@@ -17,6 +17,11 @@
                 </div>
                 <div class="header-menu">
                     <ul class="header-menu-list">
+                        <li class="header-menu-list-item">
+                            <a class="header-menu-list-item-link is-icon">
+                                <i class="fa fa-navicon"></i>
+                            </a>
+                        </li>
                         <li class="header-menu-list-item">
                             <a class="header-menu-list-item-link">Services</a>
                         </li>
@@ -60,6 +65,17 @@
                     <button class="services-button">Order right now</button>
                 </div>
                 <div class="services-menu-wrp">
+                    <div class="services-menu-text">Choose service:</div>
+                    <select class="services-menu-select">
+                        <option value="Custom Term Paper">Custom Term Paper</option>
+                        <option value="Research Paper">Research Paper</option>
+                        <option value="Essay">Essay</option>
+                        <option value="Book Report">Book Report</option>
+                        <option value="Custom Term Paper">Coursework</option>
+                        <option value="Research Paper">Thesis</option>
+                        <option value="Essay">Case Study</option>
+                        <option value="Book Report">Paper Writing Services</option>
+                    </select>
                     <div class="services-menu">
                         <ul class="services-menu-list">
                             <li class="services-menu-list-item">
@@ -104,6 +120,7 @@
                         <h2 class="services-content-item-title">Plagiarism check</h2>
                         <p class="services-content-item-text">Our guarantee is that the best term papers are received by every single student that hires us and we managed to achieve this high.</p>
                     </div>
+                    <div class="clear"></div>
                     <div class="services-content-item">
                         <div class="services-content-item-img">
                             <img class="is-img3" src="images/Rounded Rectangle 5.png">
@@ -125,47 +142,795 @@
                 </div>
                 <div class="first-order">
                     <p class="first-order-text">&#8212; Is this your first time?
+                        <br>
                         <span class="is-bold">Make the first order with 20% OFF!</span>
                     </p>
                     <button class="first-order-button">Order with
                         <span class="is-bold">20% OFF</span>
                     </button>
                 </div>
-                <div class="comment-block">
-                    <blockquote class="comment-block-text">Best in class services coupled with on time deliveries and what you get is a winning combination! You guys really take work quality to an altogether new level! Testordersite.com, thank you so much!
-                        <div class="comment-block-text-author">Monica B., Canada, Brampton</div>
-                        <div class="comment-block-text-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                <div class="comment-block slider">
+                    <div class="slider-content">
+                        <div class="slider-content-item">
+                            <blockquote class="comment-block-text">Best in class services coupled with on time deliveries and what you get is a winning combination! You guys really take work quality to an altogether new level! Testordersite.com, thank you so much!
+                                <div class="comment-block-text-author">Monica B., Canada, Brampton</div>
+                                <div class="comment-block-text-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-sta"></i>
+                                </div>
+                            </blockquote>
                         </div>
-                    </blockquote>
-                </div>
-                <div class="statistics-block">
-                    <div class="accordion">
-                        <div class="accordion-item">
-                            <i class="fa fa-plus"></i>Item 1</div>
-                        <div class="accordion-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
-                        <div class="accordion-item">
-                            <i class="fa fa-plus"></i>Item 2</div>
-                        <div class="accordion-data">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-                        <div class="accordion-item">
-                            <i class="fa fa-plus"></i>Item 3</div>
-                        <div class="accordion-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
-                        <div class="accordion-item">
-                            <i class="fa fa-plus"></i>Item 4</div>
-                        <div class="accordion-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                        <div class="slider-content-item">
+                            <blockquote class="comment-block-text">Best in class services coupled with on time deliveries and what you get is a winning combination! You guys really take work quality to an altogether new level! Testordersite.com, thank you so much!
+                                <div class="comment-block-text-author">Monica B., Canada, Brampton</div>
+                                <div class="comment-block-text-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="slider-content-item">
+                            <blockquote class="comment-block-text">Best in class services coupled with on time deliveries and what you get is a winning combination! You guys really take work quality to an altogether new level! Testordersite.com, thank you so much!
+                                <div class="comment-block-text-author">Monica B., Canada, Brampton</div>
+                                <div class="comment-block-text-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="slider-content-item">
+                            <blockquote class="comment-block-text">Best in class services coupled with on time deliveries and what you get is a winning combination! You guys really take work quality to an altogether new level! Testordersite.com, thank you so much!
+                                <div class="comment-block-text-author">Monica B., Canada, Brampton</div>
+                                <div class="comment-block-text-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button data-dir="Prev">Prev
+                            <i class="fa fa-arrow-left"></i>
+                        </button>
+                        <button data-dir="Next">Next
+                            <i class="fa fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <button class="call">Split</button>
-                    <br>
-                    <br>
-                    <br>
+                <div class="order-instruction">
+                    <p class="order-instruction-text">&#8212; How do you work?</p>
+                    <div class="order-instruction-content">
+                        <div class="order-instruction-content-item">
+                            <div class="order-instruction-content-item-img is-first">
+                                <div class="is-number">1</div>
+                            </div>
+                            <h2 class="order-instruction-content-item-title">You place order</h2>
+                            <p class="order-instruction-content-item-text">Our term paper writing service follows strict academic standards and professor requirements.</p>
+                        </div>
+                        <div class="order-instruction-content-item">
+                            <div class="order-instruction-content-item-img is-second">
+                                <div class="is-number">2</div>
+                            </div>
+                            <h2 class="order-instruction-content-item-title">You submit payment</h2>
+                            <p class="order-instruction-content-item-text">Our guarantee is that the best term papers are received by every single student that.</p>
+                        </div>
+                        <div class="order-instruction-content-item">
+                            <div class="order-instruction-content-item-img is-third">
+                                <div class="is-number">3</div>
+                            </div>
+                            <h2 class="order-instruction-content-item-title">We are work</h2>
+                            <p class="order-instruction-content-item-text">Every single student that is currently looking for research papers wants to make sure that quality is high.</p>
+                        </div>
+                        <div class="order-instruction-content-item">
+                            <div class="order-instruction-content-item-img is-fourth">
+                                <div class="is-number">4</div>
+                                <img class="is-check" src="images/GroupCheck.png">
+                            </div>
+                            <h2 class="order-instruction-content-item-title done">Your paper done</h2>
+                            <p class="order-instruction-content-item-text">Our term paper writing service follows strict academic standards.</p>
+                        </div>
+                    </div>
+                    <button class="order-instruction-button">Place my order</button>
+                </div>
+                <div class="statistics-block">
+                    <p class="statistics-block-text">&#8212; Select the desired service</p>
+                    <div class="accordion">
+                        <div class="accordion-item-wrp">
+                            <a class="accordion-item">
+                                <i class="fa fa-caret-right"></i>Academic Writing Services</a>
+                            <div class="accordion-data">
+                                <ul class="accordion-data-list">
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis/Dissertation Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Research Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Editing</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Proofreading</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Formatting</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation Chapters</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item-wrp">
+                            <a class="accordion-item">
+                                <i class="fa fa-caret-right"></i>Dissertation Services</a>
+                            <div class="accordion-data">
+                                <ul class="accordion-data-list">
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis/Dissertation Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Research Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Editing</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Proofreading</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Formatting</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation Chapters</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item-wrp">
+                            <a class="accordion-item">
+                                <i class="fa fa-caret-right"></i>Admission Services</a>
+                            <div class="accordion-data">
+                                <ul class="accordion-data-list">
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis/Dissertation Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Research Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Editing</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Proofreading</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Formatting</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation Chapters</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item-wrp">
+                            <a class="accordion-item">
+                                <i class="fa fa-caret-right"></i>Assignments</a>
+                            <div class="accordion-data">
+                                <ul class="accordion-data-list">
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis/Dissertation Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Research Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Editing</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Proofreading</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Formatting</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation Chapters</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item-wrp">
+                            <a class="accordion-item">
+                                <i class="fa fa-caret-right"></i>Editing Services
+                                <span class="badge">Most Popular</span>
+                            </a>
+                            <div class="accordion-data">
+                                <ul class="accordion-data-list">
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Thesis/Dissertation Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Research Proposal</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Editing</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Proofreading</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Formatting</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-data-list-item">
+                                        <p class="service-name">Dissertation Chapters</p>
+                                        <div class="service-info">
+                                            <p class="service-info-price">from
+                                                <span>$19.99</span>
+                                            </p>
+                                            <button class="service-info-button is-readmore">
+                                                <span class="service-info-button-text">Read more</span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <button class="service-info-button is-ordernow">
+                                                <span class="service-info-button-text">Order now</span>
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img class="is-newLabel" src="images/Group 6.png">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-wrp">

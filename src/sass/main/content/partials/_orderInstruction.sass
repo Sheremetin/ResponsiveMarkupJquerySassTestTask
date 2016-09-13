@@ -1,0 +1,126 @@
+.order-instruction
+  width: 100%
+  text-align: center
+  background-image: url('../../../../../../../dist/images/Rectangle9.png')
+  padding: 77px 0
+  box-shadow: -5px 1px 22px -4px rgba(0, 0, 0, .4)
+
+  &-text
+    font-family: 'Ubuntu', sans-serif
+    font-size: 30px
+    padding-right: 30px
+    color: #565656
+    margin: 20px auto 0 auto
+
+  &-content
+    width: 1140px
+    margin: 0 auto
+    overflow: hidden
+
+    @include breakpoint(1024px)
+      width: 100%
+
+    &-item
+      float: left
+      width: calc(100% / 4)
+      padding: 15px 20px
+      box-sizing: border-box
+
+      @include breakpoint(736px)
+        width: 100%
+        float: none
+
+      &-img
+        box-sizing: border-box
+        border: 1px solid #9cc6f0
+        border-radius: 50%
+        width: 180px
+        height: 180px
+
+        @include breakpoint(736px)
+          display: none
+
+        &.is-first
+          width: 125px
+          height: 125px
+          margin: 33px auto 23px
+
+          .is-number
+            padding: 36px 34px
+
+        &.is-second
+          width: 145px
+          height: 145px
+          margin: 21px auto 15px auto
+
+          .is-number
+            padding: 44px 34px
+
+        &.is-third
+          width: 105px
+          height: 105px
+          margin: 41px auto 35px auto
+
+          .is-number
+            padding: 25px 34px
+
+        &.is-fourth
+          width: 115px
+          height: 115px
+          margin: 36px auto 31px auto
+          position: relative
+
+          .is-number
+            padding: 30px 34px
+
+        .is-number
+          color: #4592dc
+          font-size: 55px
+          font-weight: bold
+
+        .is-check
+          position: absolute
+          top: -20px
+          right: -14px
+          background: #ffffff
+          border-radius: 50%
+
+      &-title
+        color: #4592dc
+        font-size: 20px
+        font-family: 'Ubuntu', sans-serif
+
+        &.done
+          color: #3fae5c
+
+      &-text
+        padding-top: 12px
+        color: #909090
+        font-size: 14px
+        font-weight: 300
+        font-family: 'Ubuntu', sans-serif
+        line-height: 23px
+
+  &-button
+    background: #3fae5c
+    color: #ffffff
+    padding: 6px 42px
+    height: 70px
+    border: 1px solid #3fae5c
+    border-radius: 5px
+    text-align: center
+    white-space: nowrap
+    cursor: pointer
+    font-family: 'Ubuntu', sans-serif
+    font-size: 30px
+    text-decoration: none
+    touch-action: manipulation
+    line-height: 16px
+    box-sizing: border-box
+    vertical-align: baseline
+    margin: 53px auto
+
+    @include breakpoint(736px)
+      font-size: 20px
+      padding: 6px 15px
+      height: 50px

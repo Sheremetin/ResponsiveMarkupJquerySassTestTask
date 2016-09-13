@@ -3,6 +3,9 @@
   margin: 0 auto
   padding-top: 69px
 
+  @include breakpoint(1024px)
+    width: 100%
+
   &-wrp
     box-shadow: 0px -4px 11px -7px rgba(0, 0, 0, .4)
     width: 100%
@@ -10,17 +13,29 @@
   &-menu
     padding-bottom: 70px
 
+    @include breakpoint(1024x)
+      padding-bottom: 40px
+
     &-list
       list-style: none
       text-align: center
       width: 900px
       margin: 0 auto
 
+      @include breakpoint(1024px)
+        text-align: left
+        width: 100%
+        padding: 0 10px
+        box-sizing: border-box
+
       &-item
         color: #6b6b6b
         display: inline-block
         font-family: 'Ubuntu', sans-serif
         font-weight: 300
+
+        @include breakpoint(1024px)
+          width: 48%
 
         &-link
           text-decoration: underline
@@ -34,13 +49,25 @@
     width: 925px
     margin: 0 auto
 
+    @include breakpoint(1024px)
+      width: 100%
+
     &-text
       float: left
       margin: 20px 28px 0 19px
 
+      @include breakpoint(1024px)
+        float: none
+        margin: 20px auto
+        text-align: center
+
     &-list
       list-style: none
       float: left
+
+      @include breakpoint(1024px)
+        text-align: center
+        width: 100%
 
       &-item
         display: inline-block
@@ -55,4 +82,7 @@
     font-size: 12px
     padding: 80px
     line-height: 14px
+
+    @include breakpoint(1024px)
+      padding: 60px 10px
 

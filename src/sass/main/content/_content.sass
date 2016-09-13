@@ -1,7 +1,11 @@
 .content
   margin-top: 59px
 
+  @include breakpoint(1024px)
+    margin: 0
+
   @import "partials/servicesBlock"
   @import "partials/firstOrder"
   @import "partials/commentBlock"
-  //@import "partials/statistics"
+  @import "partials/orderInstruction"
+  @import "partials/statistics"

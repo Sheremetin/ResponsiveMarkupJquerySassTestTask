@@ -1,7 +1,6 @@
 //@import "../../compass/css3/images"
 
 .services
-  height: 526px
   width: 100%
   text-align: center
   background: #2b7fca
@@ -14,6 +13,12 @@
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #2b7fca, #75b6ff)
   /* Standard syntax */
+  padding-top: 195px
+  box-sizing: border-box
+  padding-bottom: 165px
+
+  @include breakpoint(736px)
+    padding: 60px 0
 
   &-title
     //margin: 0
@@ -21,8 +26,11 @@
     font-weight: bold
     font-family: 'Ubuntu', sans-serif
     color: #ffffff
-    padding: 195px 0 33px 0
+    padding: 0 0 33px 0
     letter-spacing: 2px
+
+    @include breakpoint(736px)
+      font-size: 38px
 
   &-button
     background: #ffffff
@@ -43,10 +51,18 @@
     line-height: 16px
     box-sizing: border-box
 
+    @include breakpoint(736px)
+      font-size: 20px
+      padding: 6px 15px
+      height: 50px
+
 .services-menu
   display: table
   width: 1140px
   margin: 0 auto
+
+  @include breakpoint(1024px)
+    display: none
 
   &-wrp
     width: 100%
@@ -60,6 +76,21 @@
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #3889d4, #529ce6)
     /* Standard syntax */
+
+    @include breakpoint(1024px)
+      overflow: hidden
+      padding: 10px 30px
+      box-sizing: border-box
+      background: #3889d4
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(left, #3889d4, #3889d4)
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(right, #3889d4, #3889d4)
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(right, #3889d4, #3889d4)
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to right, #3889d4, #3889d4)
+      /* Standard syntax */
 
   &-list
     list-style: none
@@ -91,6 +122,41 @@
         font-size: 14px
         letter-spacing: -0.1px
 
+  &-text
+    display: none
+    float: left
+    color: #c6f2ff
+    font-size: 14px
+    font-weight: 300
+    padding: 13px
+
+    @include breakpoint(1024px)
+      display: block
+
+    @include breakpoint(374px)
+      display: block
+      float: none
+      margin: 0 auto
+      text-align: center
+
+  &-select
+    display: none
+    float: right
+    background: #529ce6
+    border: 1px solid #529ce6
+    padding: 10px
+    color: #c6f2ff
+    font-size: 14px
+    font-weight: 300
+    border-radius: 4px
+
+    @include breakpoint(1024px)
+      display: block
+
+    @include breakpoint(374px)
+      float: none
+      margin: 0 auto
+
 .services-content
   width: 1140px
   margin: 0 auto
@@ -98,11 +164,17 @@
   text-align: center
   padding-top: 64px
 
+  @include breakpoint(1024px)
+    width: 100%
+
   &-item
     float: left
     width: calc(100% / 4)
     padding: 15px 20px
     box-sizing: border-box
+
+    @include breakpoint(736px)
+      width: calc(100% / 2)
 
     &-img
       box-sizing: border-box
@@ -112,17 +184,49 @@
       margin: 20px auto 26px auto
       height: 180px
 
+      @include breakpoint(1024px)
+        height: 160px
+        width: 160px
+
+      @include breakpoint(736px)
+       width: 130px
+       height: 130px
+
       .is-img1
         padding: 45px 32px
+
+        @include breakpoint(1024px)
+          padding: 35px 22px
+
+        @include breakpoint(736px)
+          padding: 20px 8px
 
       .is-img2
         padding: 48px 48px
 
+        @include breakpoint(1024px)
+          padding: 35px 22px
+
+        @include breakpoint(736px)
+          padding: 20px
+
       .is-img3
         padding: 64px 34px
 
+        @include breakpoint(1024px)
+          padding: 48px 21px
+
+        @include breakpoint(736px)
+          padding: 36px 34px
+
       .is-img4
         padding: 47px 41px
+
+        @include breakpoint(1024px)
+          padding: 35px 22px
+
+        @include breakpoint(736px)
+          padding: 21px 18px
 
     &-title
       color: #4592dc
@@ -144,6 +248,10 @@
   text-align: center
   padding: 60px 0 110px 0
 
+  @include breakpoint(1024px)
+    width: 100%
+    padding: 60px 0
+
   &-text
     display: inline-block
     font-family: 'Ubuntu', sans-serif
@@ -151,6 +259,10 @@
     padding-right: 30px
     color: #565656
     margin: 20px auto
+
+    @include breakpoint(736px)
+      font-size: 20px
+      padding-right: 10px
 
   &-button
     display: inline-block
@@ -171,5 +283,15 @@
     box-sizing: border-box
     vertical-align: baseline
 
+    @include breakpoint(736px)
+      font-size: 20px
+      padding: 6px 15px
+      height: 50px
 
+.clear
+  clear: both
+  display: none
+
+  @include breakpoint(736px)
+    display: block
 

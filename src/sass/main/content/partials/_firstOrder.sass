@@ -1,5 +1,6 @@
 .first-order
-  height: 390px
+  //height: 390px
+  padding-bottom: 132px
   width: 100%
   text-align: center
   background: #2b7fca
@@ -12,12 +13,26 @@
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #2b7fca, #75b6ff)
   /* Standard syntax */
+
+  @include breakpoint(736px)
+    padding-bottom: 60px
+
   &-text
     font-family: 'Ubuntu', sans-serif
     font-size: 30px
     color: #ffffff
     margin: 20px auto
     padding: 130px 0 8px
+
+    @include breakpoint(736px)
+      font-size: 20px
+      padding-top: 60px
+
+    br
+      display: none
+
+      @include breakpoint(736px)
+        display: block
 
   .is-bold
     font-weight: 800
@@ -41,3 +56,8 @@
     box-sizing: border-box
     vertical-align: baseline
     margin: 0 auto
+
+    @include breakpoint(736px)
+      font-size: 20px
+      padding: 6px 15px
+      height: 50px

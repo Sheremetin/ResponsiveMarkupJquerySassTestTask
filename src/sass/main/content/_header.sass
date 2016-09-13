@@ -14,6 +14,7 @@
   @include breakpoint(1024px)
     width: 100%
     left: 0
+    position: relative
 
   &-logo
     float: left
@@ -26,23 +27,52 @@
       padding-left: 22px
       color: #565656
 
+      @include breakpoint(1024px)
+        padding-left: 0
+        position: absolute
+        font-size: 28px
+        left: calc((100% - 224px)/2)
+        top: 10px
+
       .is-blue
         color: #3f89d5
 
       &-img
         vertical-align: middle
 
+        @include breakpoint(1024px)
+          width: 40px
+
   &-menu
     float: right
 
+    @include breakpoint(1024px)
+      width: 100%
+
     &-list
       list-style: none
+      overflow: hidden
 
       &-item
         float: left
         color: #999999
         font-family: 'Open Sans', sans-serif
         font-weight: 300
+
+        @include breakpoint(1024px)
+          display: none
+
+        &:first-child
+          display: none
+
+          @include breakpoint(1024px)
+            display: block
+            float: left
+
+        &:last-child
+          @include breakpoint(1024px)
+            display: block
+            float: right
 
         &-link
           text-decoration: none
@@ -78,3 +108,23 @@
               &:before
                 padding: 7px 10px
                 display: block
+
+              @include breakpoint(1024px)
+                border: 1px solid #5ea4f2
+                color: #5ea4f2
+                background: #ffffff
+                margin-right: 10px
+
+            .fa-navicon
+              display: none
+
+              &:before
+                padding: 7px 8px
+                display: block
+
+              @include breakpoint(1024px)
+                display: block
+                border: 1px solid #5ea4f2
+                color: #5ea4f2
+                background: #ffffff
+                margin-left: 10px

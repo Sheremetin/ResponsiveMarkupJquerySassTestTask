@@ -1,7 +1,11 @@
 .comment-block
-  width: 1140px
+  width: 850px
   margin: 0 auto
-  padding: 145px 0 50px 0
+  padding: 145px 30px 120px 30px
+  box-sizing: border-box
+
+  @include breakpoint(736px)
+    width: 100%
 
   &-text
     font-family: 'Ubuntu', sans-serif
@@ -15,6 +19,9 @@
     margin: 0 auto
     line-height: 28px
 
+    @include breakpoint(736px)
+      width: 80%
+
     &:before
       color: #5fa3d9
       content: "\f10d"
@@ -24,6 +31,9 @@
       top: -35px
       left: -72px
       position: absolute
+
+      @include breakpoint(1024px)
+        left: -35px
 
     &:after
       color: #5fa3d9
@@ -48,4 +58,16 @@
     &-rating
       color: #ffc000
       font-size: 12px
+
+  &.slider
+    overflow: hidden
+
+    .slider-content
+      width: 10000px
+      overflow: hidden
+
+      &-item
+        float: left
+        padding: 50px 75px
+        box-sizing: border-box
 
