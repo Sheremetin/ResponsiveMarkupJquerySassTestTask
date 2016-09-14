@@ -3,9 +3,20 @@
   margin: 0 auto
   padding: 145px 30px 120px 30px
   box-sizing: border-box
+  position: relative
+
+  @include breakpoint(870px)
+    width: 100%
+
+  @include breakpoint(870px)
+    padding: 75px 20px 65px 20px
 
   @include breakpoint(736px)
-    width: 100%
+    padding-left: 0
+    padding-right: 0
+
+  //@include breakpoint(320px)
+  //  width: 100%
 
   &-text
     font-family: 'Ubuntu', sans-serif
@@ -19,8 +30,18 @@
     margin: 0 auto
     line-height: 28px
 
-    @include breakpoint(736px)
-      width: 80%
+    @include breakpoint(870px)
+      width: 575px
+      margin: 0 auto
+
+    @include breakpoint(568px)
+      width: 485px
+
+    @include breakpoint(414px)
+      width: 340px
+
+    @include breakpoint(320px)
+      width: 280px
 
     &:before
       color: #5fa3d9
@@ -35,6 +56,10 @@
       @include breakpoint(1024px)
         left: -35px
 
+      @include breakpoint(870px)
+        left: 0
+        font-size: 30px
+
     &:after
       color: #5fa3d9
       content: "\f10e"
@@ -44,6 +69,10 @@
       bottom: 8px
       right: -37px
       position: absolute
+
+      @include breakpoint(870px)
+       right: 0
+       font-size: 20px
 
     &-author
       font-family: 'Ubuntu', sans-serif
@@ -70,4 +99,38 @@
         float: left
         padding: 50px 75px
         box-sizing: border-box
+        width: 850px
+
+        @include breakpoint(870px)
+          width: 725px
+          padding: 50px 0
+
+        @include breakpoint(667px)
+          width: 667px
+
+        @include breakpoint(568px)
+          width: 568px
+
+        @include breakpoint(414px)
+          width: 414px
+
+        @include breakpoint(375px)
+          width: 375px
+
+        @include breakpoint(320px)
+          width: 320px
+
+    .slider-nav
+      &-link
+        position: absolute
+        top: 45%
+        font-size: 35px
+        font-weight: 300
+        color: #979797
+
+        &.is-left
+          left: 0
+
+        &.is-right
+          right: 0
 

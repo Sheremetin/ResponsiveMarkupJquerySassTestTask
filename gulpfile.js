@@ -8,7 +8,6 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    ngAnnotate = require('gulp-ng-annotate'),
     concat = require('gulp-concat'),
     filter = require('gulp-filter'),
     imagemin = require('gulp-imagemin'),
@@ -90,7 +89,6 @@ gulp.task('scripts', ['jshint'], function () {
     return gulp.src(SRC_PATH + 'scripts/**/*.js')
         .pipe(plumber())
         .pipe(concat('all.js'))
-        .pipe(ngAnnotate({add: true}))
         .pipe(uglify())
         .pipe(rename('all.min.js'))
         .pipe(gulp.dest(ASSETS_PATH + 'js'));
