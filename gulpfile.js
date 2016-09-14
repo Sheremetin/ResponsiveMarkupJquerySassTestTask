@@ -68,14 +68,8 @@ gulp.task('img', function () {
  * Copy all fonts
  */
 gulp.task('fonts', function () {
-    //gulp.src(SRC_PATH + 'fonts/**/*.{ttf,woff,woff2,eof,svg}')
-    //    .pipe(plumber())
-    //    .pipe(gulp.dest(ASSETS_PATH + 'fonts'));
     gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
         .pipe(gulp.dest(ASSETS_PATH + 'fonts'));
-    //gulp.src('./bower_components/bootstrap/dist/fonts/!**/!*.{ttf,woff,eof,svg}*')
-    //        .pipe(gulp.dest(ASSETS_PATH + 'fonts'));
-
 });
 
 /**
@@ -135,15 +129,6 @@ gulp.task('watch.img', function () {
 });
 
 /**
- * Watch fonts
- */
-//gulp.task('watch.fonts', function () {
-//    watch(SRC_PATH + 'fonts/**/*.{ttf,woff,eof,svg}', batch(function (events, done) {
-//        gulp.start('fonts', done);
-//    }));
-//});
-
-/**
  * Watch sass
  */
 gulp.task('watch.sass', function () {
@@ -160,21 +145,3 @@ gulp.task('watch.scripts', function () {
         gulp.start('scripts', done);
     }));
 });
-
-/**
- * Build bower
- */
-// gulp.task('bower', function () {
-//     var jsFilter    = filter('**/*.js', {restore: true});
-//
-//     return gulp.src('./bower.json')
-//         .pipe(bower({
-//             paths: './'
-//         }))
-//         .pipe(jsFilter)
-//         .pipe(dedupe())
-//         .pipe(concat('vendor.min.js'))
-//         .pipe(uglify())
-//         .pipe(gulp.dest(ASSETS_PATH + 'js'))
-//         .pipe(jsFilter.restore)
-// });
