@@ -13,12 +13,80 @@
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #2b7fca, #75b6ff)
   /* Standard syntax */
-  padding-top: 195px
+  padding-top: 35px
   box-sizing: border-box
-  padding-bottom: 165px
+  padding-bottom: 5px
 
   @include breakpoint(736px)
     padding: 60px 0
+
+  &-animation
+    overflow: hidden
+    text-align: center
+    width: 650px
+    height: 130px
+    padding-left: 0
+    margin: 30px auto 0 auto
+
+    &-item
+      display: inline-block
+      -webkit-animation: cloud 4s infinite
+      animation: cloud 4s infinite
+
+      &.is-cloud2
+        -webkit-animation: cloud2 7s infinite
+        animation: cloud2 7s infinite
+
+    @-webkit-keyframes cloud
+      from
+        -webkit-transform: translateY(0)
+
+      50%
+        -webkit-transform: translateY(70px)
+
+      to
+        -webkit-transform: translateY(0)
+
+    @keyframes cloud
+      from
+        transform: translateY(0)
+
+      50%
+        transform: translateY(70px)
+
+      to
+        transform: translateY(0)
+
+    @-webkit-keyframes cloud2
+      from
+        -webkit-transform: translateX(0)
+
+      50%
+        -webkit-transform: translateX(150px)
+
+      to
+        -webkit-transform: translateX(0)
+
+    @keyframes cloud2
+      from
+        transform: translateX(0)
+
+      50%
+        transform: translateX(150px)
+
+      to
+        transform: translateX(0)
+
+    li:nth-of-type(1)
+      -webkit-animation-timing-function: ease
+      animation-timing-function: ease
+      margin-right: 70px
+
+
+    li:nth-of-type(2)
+      -webkit-animation-timing-function: linear
+      animation-timing-function: linear
+      margin-left: 70px
 
   &-title
     //margin: 0
@@ -149,6 +217,8 @@
     font-size: 14px
     font-weight: 300
     border-radius: 4px
+    height: 40px
+    box-sizing: border-box
 
     @include breakpoint(1024px)
       display: block
@@ -156,6 +226,9 @@
     @include breakpoint(374px)
       float: none
       margin: 0 auto
+
+    option
+      padding: 10px
 
 .services-content
   width: 1140px

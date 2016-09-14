@@ -3,16 +3,7 @@
   padding-bottom: 132px
   width: 100%
   text-align: center
-  background: #2b7fca
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #2b7fca, #75b6ff)
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #2b7fca, #75b6ff)
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #2b7fca, #75b6ff)
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #2b7fca, #75b6ff)
-  /* Standard syntax */
+  @include background-image("../images/Group 5", "png", 100%, 100% no-repeat)
 
   @include breakpoint(736px)
     padding-bottom: 60px

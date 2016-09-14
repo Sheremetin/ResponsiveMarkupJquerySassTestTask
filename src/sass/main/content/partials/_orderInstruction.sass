@@ -90,9 +90,29 @@
         color: #4592dc
         font-size: 20px
         font-family: 'Ubuntu', sans-serif
+        display: inline-block
 
         &.done
           color: #3fae5c
+
+        .is-list-number
+          display: none
+
+          @include breakpoint(736px)
+            display: inline-block
+            background: #4592dc
+            color: #ffffff
+            margin-right: 5px
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            padding: 5px 0
+            box-sizing: border-box
+            text-align: center
+
+        .is-list-check
+          width: 32px
+          vertical-align: middle
 
       &-text
         padding-top: 12px
